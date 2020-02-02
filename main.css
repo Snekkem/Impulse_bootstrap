@@ -1,0 +1,131 @@
+.nav-link {
+    font-size: 11px;
+}
+
+img {
+    max-width: 100%;
+}
+
+.navbar-light .navbar-brand {
+    color: rgba(87, 87, 87, 0.9);
+    font-weight: 600;
+}
+
+.navbar-light .navbar-nav .active>.nav-link {
+    color: rgb(243, 21, 21);
+    font-weight: 600;
+}
+
+.photo {
+    background: url(images/home-bg.jpg);
+    height: 100vh;
+    width: 100%;
+    background-position: 50% 30%;
+}
+
+.photo h3 {
+    color: #fff;
+}
+
+hr {
+    width: 70px;
+}
+
+.pt-5 {
+    padding-top: 5%;
+}
+
+.pt-10 {
+    padding-top: 10%;
+}
+
+.pt-20 {
+    padding-top: 20%;
+}
+
+.py-10per {
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+.mt-10 {
+    margin-top: 10%;
+}
+
+.pb-6 {
+    padding-bottom: 6%;
+}
+
+.bg-orange {
+    background: rgb(212, 87, 28);
+}
+
+.bg-gray {
+    background: rgb(41, 39, 37);
+}
+
+.our-team {
+    background: url(images/team-bg.jpg);
+    width: 100%;
+    background-position: 50% 100%;
+}
+
+.team {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "1 2" "3 none";
+}
+
+.portfolio-pictures img {
+    opacity: .6;
+}
+
+.plans {
+    display: block;
+    font-size: 12px;
+}
+
+.contact {
+    background: url(images/contact-bg.jpg);
+    width: 100%;
+    background-position: 50% 70%;
+}
+
+.circle {
+    height: 50px;
+    width: 50px;
+}
+
+@media screen and (min-width: 768px) {
+    .service {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "service block1 block2" "service block3 block4";
+    }
+    .service>div:nth-child(1) {
+        grid-area: service
+    }
+    .service>div:nth-child(2) {
+        grid-area: block1
+    }
+    .service>div:nth-child(3) {
+        grid-area: block2
+    }
+    .service>div:nth-child(4) {
+        grid-area: block3
+    }
+    .service>div:nth-child(5) {
+        grid-area: block4
+    }
+    .portfolio-pictures {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .team {
+        display: flex;
+    }
+   
+}
